@@ -77,14 +77,13 @@ const AboutSection = () => {
                   </div>
                   <Progress 
                     value={skill.level} 
-                    className="h-2 bg-gray-200" 
-                    indicatorClassName={
+                    className={`h-2 bg-gray-200 ${
                       skill.level > 90 
                         ? "bg-analytics-purple" 
                         : skill.level > 85 
                         ? "bg-analytics-blue" 
                         : "bg-analytics-green"
-                    }
+                    }`}
                   />
                 </div>
               ))}
