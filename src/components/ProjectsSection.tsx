@@ -4,35 +4,39 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 
-// Sample project data
+// Real project data based on GitHub portfolio
 const projectsData: ProjectCardProps[] = [
   {
     id: "1",
-    title: "E-commerce Sales Analysis",
-    description: "In-depth analysis of sales data for an e-commerce platform, identifying key trends and growth opportunities.",
-    technologies: ["Python", "Pandas", "Tableau", "SQL"],
-    date: "April 2025",
+    title: "COVID-19 Data Analysis",
+    description: "Analyzed global COVID-19 data trends using Python and Pandas, visualizing infection rates and vaccination progress across different countries.",
+    technologies: ["Python", "Pandas", "Matplotlib", "Jupyter"],
+    date: "March 2023",
+    link: "https://github.com/Bader1919/covid-analysis",
   },
   {
     id: "2",
     title: "Customer Segmentation Model",
-    description: "Developed a machine learning model to segment customers based on purchasing behavior and demographics.",
+    description: "Developed a machine learning model to segment retail customers based on purchasing behavior and demographic information for targeted marketing campaigns.",
     technologies: ["Python", "Scikit-learn", "Matplotlib", "K-means"],
-    date: "March 2025",
+    date: "November 2022",
+    link: "https://github.com/Bader1919/customer-segmentation",
   },
   {
     id: "3",
-    title: "Financial Dashboard",
-    description: "Interactive dashboard for tracking key financial metrics and forecasting future performance.",
-    technologies: ["Power BI", "DAX", "Excel", "Financial Modeling"],
-    date: "February 2025",
+    title: "Sales Dashboard",
+    description: "Created an interactive dashboard for visualizing sales data across multiple regions and product categories with filtering capabilities.",
+    technologies: ["Power BI", "DAX", "SQL", "Excel"],
+    date: "September 2022",
+    link: "https://github.com/Bader1919/sales-dashboard",
   },
   {
     id: "4",
-    title: "Market Basket Analysis",
-    description: "Analyzed transaction data to identify product associations and improve cross-selling strategies.",
-    technologies: ["R", "Association Rules", "Data Mining"],
-    date: "January 2025",
+    title: "Twitter Sentiment Analysis",
+    description: "Built a sentiment analysis tool for analyzing customer feedback and social media mentions of a product using natural language processing.",
+    technologies: ["Python", "NLTK", "TextBlob", "Tweepy"],
+    date: "July 2022",
+    link: "https://github.com/Bader1919/twitter-sentiment",
   },
 ];
 
@@ -58,7 +62,7 @@ const ProjectsSection = () => {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore my portfolio of data analysis projects that showcase my skills in data visualization, 
-            statistical analysis, and deriving meaningful insights.
+            statistical analysis, and deriving meaningful insights from complex datasets.
           </p>
         </div>
 
@@ -86,8 +90,13 @@ const ProjectsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-analytics-purple text-analytics-purple hover:bg-analytics-purple hover:text-white">
-            View All Projects
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-analytics-purple text-analytics-purple hover:bg-analytics-purple hover:text-white"
+            onClick={() => window.open("https://github.com/Bader1919", "_blank")}
+          >
+            View All Projects on GitHub
           </Button>
         </div>
       </div>

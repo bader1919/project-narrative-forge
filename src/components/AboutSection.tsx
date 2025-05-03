@@ -24,7 +24,7 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-gray-600 mb-6">
-              I'm a passionate data analyst with over 5 years of experience in transforming complex datasets into 
+              I'm Bader, a passionate data analyst with over 5 years of experience in transforming complex datasets into 
               actionable insights. My expertise spans various industries including e-commerce, finance, 
               healthcare, and marketing.
             </p>
@@ -62,6 +62,13 @@ const AboutSection = () => {
                 <h4 className="font-semibold">Bachelor's in Statistics</h4>
                 <p className="text-sm text-gray-600">Analytics University, 2020</p>
               </div>
+            </div>
+            
+            <div className="mt-8">
+              <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
+              <p className="text-gray-600">
+                Visit my GitHub: <a href="https://github.com/Bader1919" className="text-analytics-purple hover:underline" target="_blank" rel="noopener noreferrer">Bader1919.github.io</a>
+              </p>
             </div>
           </div>
           
